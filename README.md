@@ -1,5 +1,5 @@
-# `ada-panda-mini`
-
+# `bioanalytical-ADA-drug-interference-to-pandA-correction-method-development`
+Bioanalytical ADA Drug Interference → PandA Correction: Method Development, Validation & Benchmarking Pipeline
 *A minimal, reproducible simulation of ADA drug interference and PandA correction.*
 
 👉 For background on **why ADA assays matter, case studies, pharma workflows, and the role of data science**, see [introduction.md](./introduction.md).
