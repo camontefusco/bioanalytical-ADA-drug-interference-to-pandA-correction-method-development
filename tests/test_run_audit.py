@@ -40,6 +40,12 @@ def test_replicate_summary_reports_mcse():
     assert summary["standard_bias_pp"]["q025"] <= summary["standard_bias_pp"]["q975"]
 
 
+def test_expected_observation_estimands_are_bounded():
+    result = run_audit.simulate(12345, CFG)
+    assert 0 <= result["standard_expected_prev"] <= result["true_prev"]
+    assert 0 <= result["panda_expected_prev"] <= result["true_prev"]
+
+
 def test_primary_run_has_no_target_rescaling():
     result = run_audit.simulate(12345, CFG)
     configured_target = CFG["trough_targets_week52"]["ADA_negative_ng_per_mL"]
